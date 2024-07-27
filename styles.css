@@ -1,0 +1,132 @@
+
+header {
+    width: 100%;
+    height: 65px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50x;
+  
+  }
+  
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+  
+  nav > ul > li {
+    color: #660066;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+  }
+  
+  nav > ul > li:hover {
+    background-color: #660066;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  h1 {
+    color: #660066;
+   font-size:30px;
+    text-align: center;
+    }
+  
+  #logo {
+  width: 100px;
+      height: 65px;
+  padding: 0.4rem;
+      object-fit: cover;
+    }
+  
+  
+  #right-img{
+   display:block;
+  width: 100%;
+      height: 100%;
+  margin-top:65px;
+  padding-top:20px;
+  }
+  .container{
+  align-items: flex-start;
+  justify-content: space-between;
+  }
+  p{
+  text-align:left;
+  margin-right:700px;
+  flex: 1; 
+  }
+  #homeimg{
+  margin-left:900px;
+   height: -20px;
+  width:-20px;
+  margin-top:-400px;
+  }
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      grid-template-rows: repeat(2, auto);
+      gap: 20px; 
+      max-width: 2000px; 
+  }
+  
+  .grid-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .grid-item img {
+      max-width: 100px; /* Adjust the size of the icons as needed */
+      height: auto;
+      margin-bottom: 10px; /* Space between icon and text */
+      }
+  
+  .grid-item p {
+      margin: 0;
+      font-size: 20px;
+      color: #990099; }
+  .marquee {
+              width: 80%;
+              overflow: hidden;
+              white-space: nowrap;
+              box-sizing: border-box;
+          }
+          .marquee img {
+              width: 100px;
+              height: 100px;
+              margin: 0 20px;
+              vertical-align: middle;
+              transition: transform 0.3s;
+          }
+          .marquee img:hover {
+              transform: scale(1.1);
+          }
+          @keyframes marquee {
+              0% { transform: translateX(100%); }
+              100% { transform: translateX(-100%); }
+          }
+          .marquee-content {
+              display: inline-block;
+              animation: marquee 15s linear infinite;
+          }
+  
